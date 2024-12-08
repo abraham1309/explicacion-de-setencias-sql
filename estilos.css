@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.div-contenedor {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #111b21;
+}
+
+.div-contenedor .div-cabeza {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    background-color: #202c33;
+}
+
+.div-contenedor .div-cabeza p {
+    color: #fff;
+    font-size: 35px;
+    line-height: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+}
+
+.div-contenedor .div-cuerpo {
+    width: 70%;
+    height: 75%;
+    overflow-y: auto;
+}
+
+.div-contenedor .div-cuerpo .div-text-usuario {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    height: auto;
+}
+
+.div-contenedor .div-cuerpo .div-text-usuario p {
+    width: auto;
+    max-width: 80%;
+    font-size: 20px;
+    font-family: "Trebuchet MS", sans-serif;
+    text-align: right;
+    color: #d1d7db;
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px;
+    background-color: #005c4b;
+}
+
+.div-contenedor .div-cuerpo .div-text-IA {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    height: auto;
+}
+
+.div-contenedor .div-cuerpo .div-text-IA p {
+    width: auto;
+    max-width: 80%;
+    font-size: 20px;
+    font-family: "Trebuchet MS", sans-serif;
+    text-align: left;
+    color: #d1d7db;
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px;
+    background-color: #202c33;
+}
+
+.div-contenedor .div-mensaje {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202c33;
+}
+
+.div-contenedor .div-mensaje .div-elementos {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-contenedor .div-mensaje .div-elementos textarea {
+    width: 80%;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 15px;
+    border: none;
+    color: #fff;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 25px;
+    background-color: #2a3942;
+    border-radius: 15px;
+}
+
+.div-contenedor .div-mensaje .div-elementos textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.div-contenedor .div-mensaje .div-elementos button {
+    width: 20%;
+    background: none;
+    border: none;
+    color: #7C8C95;
+    text-align: right;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .div-contenedor .div-cuerpo {
+        width: 90%;
+    }
+    .div-contenedor .div-mensaje .div-elementos {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .div-contenedor .div-cabeza p {
+        font-size: 25px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 450px) {
+    .div-contenedor .div-cabeza p {
+        font-size: 23px;
+        line-height: 27px;
+        margin-top: 30px;
+    }
+    .div-contenedor .div-cuerpo .div-text-usuario p {
+        font-size: 18px;
+    }
+    .div-contenedor .div-cuerpo .div-text-IA p {
+        font-size: 18px;
+    }
+    .div-contenedor .div-mensaje .div-elementos textarea {
+        font-size: 18px;
+    }
+    .div-contenedor .div-mensaje .div-elementos button svg {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
