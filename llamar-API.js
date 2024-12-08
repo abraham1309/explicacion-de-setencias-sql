@@ -43,9 +43,9 @@ async function llamarAPI() {
             // Modelo de cohere que se va a utilizar
             model: 'command-r-plus-08-2024',
             // Prompt que se envia a la IA, incluyendo el dataset
-            prompt: `Explica de manera corta en 200 tokens para que una persona que no tenga conocimientos de SQL pueda entender la siguiente consulta SQL: ${setenciaSQL}. En el contexto del dataset: ${JSON.stringify(dataset)}`,
+            prompt: `Explica de manera corta (quiero que toda la explicacion la realizes en un maximo de 250 palabras) para que una persona que no tenga conocimientos de SQL pueda entender la siguiente consulta SQL: ${setenciaSQL}. En el contexto del dataset: ${JSON.stringify(dataset)}`,
             // Tokens que va a regrear la IA
-            max_tokens: 200,
+            max_tokens: 250,
         });
 
         //Obtenmos la respuesta de la API

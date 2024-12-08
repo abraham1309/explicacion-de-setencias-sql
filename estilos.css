@@ -1,9 +1,14 @@
+/* Normalizar los estilos para todos los navegadores */
+
 body {
     margin: 0;
     padding: 0;
     top: 0;
     box-sizing: border-box;
 }
+
+
+/* Estilos para el contenedor general */
 
 .div-contenedor {
     height: 100vh;
@@ -14,6 +19,9 @@ body {
     flex-direction: column;
     background-color: #111b21;
 }
+
+
+/* Estilos para el contenedor cabeza de la pagina web */
 
 .div-contenedor .div-cabeza {
     height: 10%;
@@ -30,11 +38,17 @@ body {
     font-weight: bold;
 }
 
+
+/* Estilos para el cuerpo en donde se muestran los resultados */
+
 .div-contenedor .div-cuerpo {
     width: 70%;
     height: 75%;
     overflow-y: auto;
 }
+
+
+/* Estilos para el div en donde se muestra la consulta que ingreso el usuario */
 
 .div-contenedor .div-cuerpo .div-text-usuario {
     width: 100%;
@@ -55,6 +69,9 @@ body {
     background-color: #005c4b;
 }
 
+
+/* Estilos para el div en donde se muestra la explicacion de la IA */
+
 .div-contenedor .div-cuerpo .div-text-IA {
     width: 100%;
     display: flex;
@@ -73,6 +90,9 @@ body {
     border-radius: 10px;
     background-color: #202c33;
 }
+
+
+/* Estilos para el contenedor en donde el usuario ingresa la setencia SQL */
 
 .div-contenedor .div-mensaje {
     height: 15%;
@@ -116,6 +136,9 @@ body {
     text-align: right;
     cursor: pointer;
 }
+
+
+/* Estilos para el diseño responsivo */
 
 @media (max-width: 850px) {
     .div-contenedor .div-cuerpo {
